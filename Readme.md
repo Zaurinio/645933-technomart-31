@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Заур Хутинаев](https://up.htmlacademy.ru/htmlcss/31/user/645933).
-* Наставник: `Кирилл Савко`.
+* Наставник: [Кирилл Савко](https://htmlacademy.ru/profile/kirill_savko).
 
 ---
 
