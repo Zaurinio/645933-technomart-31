@@ -423,6 +423,19 @@ body {
 
 .manufacturers-image-link {
   border: 1px solid var(--border-grey);
+  display: block;
+  width: 220px;
+  height: 145px;
+  margin: 0;
+  text-align: center;
+}
+
+
+.manufacturers-image-link img {
+  max-width: 100%;
+  height: auto;
+  /* display: inline-block; */
+
 }
 
 .services {
@@ -913,8 +926,10 @@ body {
 }
 
 .container {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .main-header-menu {
@@ -975,5 +990,19 @@ body {
 .company-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.products-image {
+  margin: 0;
+  padding: 0;
+}
+
+.products-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.products-item-title {
+  margin: 0;
 }
 
