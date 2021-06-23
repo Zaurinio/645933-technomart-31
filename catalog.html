@@ -90,13 +90,24 @@
           <h2 class="filters-title">Фильтр</h2>
           <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-subsection filter-price">
-              <legend class="filter-title">Цена:</legend>
-              <input class="filter-price-range" type="range" name="price-range" id="filter-price-range" min="0" max="30000">
-              <input class="filter-price-min" type="text" name="min-value" id="filter-min-value" value="0">
-              <input class="filter-price-max" type="text" name="max-value" id="filter-max-value" value="30000">
-            </fieldset>
+              <legend class="filter-title filter-title-price">Цена:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <input class="filter-price-set price-set-min" type="number" name="min-value" id="filter-min-value" value="0">
+                  <input class="filter-price-set price-set-max" type="number" name="max-value" id="filter-max-value" value="30000">
+                </div>
+              </div>
+
+                          </fieldset>
             <fieldset class="filter-subsection filter-manufacturers">
-              <legend class="filter-title">Производители:</legend>
+              <legend class="filter-title filter-title-manufacturers">Производители:</legend>
               <ul class="filter-manufacturers-list">
                 <li class="filter-option filter-checkbox">
                   <input class="filter-option-input" type="checkbox" name="bosch" id="filter-bosch" checked>
@@ -121,7 +132,7 @@
               </ul>
             </fieldset>
             <fieldset class="filter-subsection filter-supply">
-              <legend class="filter-title">Питание:</legend>
+              <legend class="filter-title filter-title-supply">Питание:</legend>
               <ul class="filter-supply-list">
                 <li class="filter-option filter-radio">
                   <input class="filter-option-input" type="radio" name="powersupply" id="filter-accumulator" checked>
