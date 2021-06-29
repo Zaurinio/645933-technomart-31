@@ -1480,8 +1480,12 @@ body {
   margin-bottom: 21px;
 }
 
+.filter-price {
+  border-bottom: 1px solid var(--basic-black-transparent);
+}
+
 .filter-price-range {
-  background-color: var(--form-elements-fill);
+  background-color: var(--form-elements-fill);  
 }
 
 .filter-price-min,
@@ -1521,6 +1525,16 @@ body {
 .filter-option-input:hover + .filter-option-title,
 .filter-option-input:focus + .filter-option-title {
   opacity: 0.4;
+}
+
+.filter-option-title::before {
+  content: "";
+  position: relative;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/filter/checkbox-off.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
 }
 
 .filter-supply-list {
@@ -2021,10 +2035,12 @@ body {
 
 .filter-title-manufacturers {
   display: inline-block;
+
 }
 
 .filter-manufacturers {
-  padding-top: 16px;
-  border-top: 1px solid var(--basic-black-transparent);
-
+  margin-top: 16px;
+  /*border-top: 1px solid var(--basic-black-transparent);*/
 }
+
+
