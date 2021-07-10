@@ -33,6 +33,10 @@
 
   --feedback-form-text: #A9A9A9;
   --purchase-popup-background: #F1F1F1;
+  --purchase-buton-shadow: #367315;
+  --basic-block-shadow: rgba(0, 0, 0, 0.15);
+
+  --services-button-shadow: #405069;
 
   --old-price: #A9A9A9;
 
@@ -88,7 +92,7 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -180,7 +184,7 @@ body {
 }
 
 .search-icon:focus .form-search {
-  background-color: white;
+  background-color: var(--basic-white);
 }
 
 .search-field {
@@ -209,7 +213,6 @@ body {
   top: 12px;
   left: 17px;
   padding: 0;
-  display: inline-block;
   width: 17px;
   height: 17px;
 }
@@ -222,7 +225,7 @@ body {
 .search-field:focus {
   outline: none;
   background-color: var(--basic-white);
-  color: black;
+  color: var(--basic-black);
 }
 
 .search-field:focus ~ .search-button .search-icon {
@@ -436,7 +439,6 @@ body {
   background-image: url('../img/header/icon-login.svg');
   background-repeat: no-repeat;
   z-index: 1;
-  transform: rotate(180);
 }
 
 .profile-list {
@@ -481,7 +483,6 @@ body {
   padding: 12px 37px 12px 35px;
   background-color: var(--basic-white);
   text-align: center;
-/*   display: inline; */
 }
 
 .site-navigation {
@@ -494,7 +495,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
-  box-shadow: inset 0px -5px 0px #293449;
+  box-shadow: inset 0px -5px 0px var(--basic-dark-blue);
   background-color: var(--basic-blue);
 }
 
@@ -544,6 +545,7 @@ body {
 
 .main-sections-link {
   display: inline-block;
+  vertical-align: middle;
   padding: 10px;
   width: 135px;
   background-color: var(--basic-white-transparent);
@@ -781,6 +783,7 @@ body {
 
 .products-link {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;  
   padding: 11px 24px 10px;
 }
@@ -795,6 +798,7 @@ body {
 
 .item-title-link {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   padding-left: 18px;
   padding-right: 17px;
@@ -828,6 +832,7 @@ body {
 
 .products-price-new {
   display: inline-block;
+  vertical-align: middle;
   position: relative;
   align-self: flex-start;
   text-align: left;
@@ -883,7 +888,7 @@ body {
   margin-bottom: 10px;
   background-color: var(--checkout-button);
   cursor: pointer;
-  box-shadow: inset 0px -3px 0px #367315;
+  box-shadow: inset 0px -3px 0px var(--purchase-buton-shadow);
   border-radius: 2px;
   border: 1px solid var(--checkout-button);
 }
@@ -931,7 +936,7 @@ body {
 }
 
 .manufacturers-item:hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--basic-block-shadow);
 }
 
 .manufacturers-item:active {
@@ -940,6 +945,7 @@ body {
 
 .manufacturers-link {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   width: 192px;
   padding: 11px 38px 9px 39px;
@@ -1077,7 +1083,7 @@ body {
   cursor: pointer;
   min-width: 240px;
   padding: 14px 22px 18px 21px;
-  box-shadow: inset 0px 1px 0px #405069, 0px 1px 0px #293449;
+  box-shadow: inset 0px 1px 0px var(--services-button-shadow), 0px 1px 0px var(--basic-dark-blue);
 }
 
 .services-button:hover {
@@ -1168,6 +1174,7 @@ body {
 
 .about-us-details-link {
   display: inline-block;
+  vertical-align: middle;
   width: 220px;
   padding: 11px 11px 9px 11px;
   text-align: center;
@@ -1501,6 +1508,7 @@ body {
   content: "";
   position: relative;
   display: inline-block;
+  vertical-align: top;
   width: 14px;
   height: 12px;
   top: 2px;
@@ -1628,6 +1636,7 @@ body {
   background-image: url(../img/filter/checkbox-off.svg);
   background-repeat: no-repeat;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .filter-option-input:focus + .filter-option-title,
@@ -1689,6 +1698,7 @@ body {
   background-image: url(../img/filter/radio-off.svg);
   background-repeat: no-repeat;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .filter-option-input:checked ~ .filter-radio-title::before {
@@ -1869,7 +1879,7 @@ body {
 
 .catalog-item:hover {
   padding-top: 38px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--basic-block-shadow);
 }
 
 .catalog-item-actions {
@@ -1987,6 +1997,7 @@ body {
 
 .header-contact-phone {
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   margin-left: 7px;
   margin-top: 3px;
@@ -2071,7 +2082,7 @@ body {
 
 .products-item:hover {
   padding-top: 38px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--basic-block-shadow);
 }
 
 .products-item:hover .products-item-actions {
@@ -2204,9 +2215,18 @@ body {
   border-bottom: 1px solid var(--basic-black-transparent);
 }
 
+.modal {
+  display: none;
+}
+
+.modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
 .modal-feedback {
   position: fixed;
-  display: none;
   top: 120px;
   left: 50%;
   margin-left: -310px;
@@ -2214,8 +2234,12 @@ body {
   padding: 46px 80px 37px;
   background-color: var(--basic-white);
   border-top: 7px solid var(--basic-red);
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 20px var(--basic-block-shadow));
   z-index: 3;
+}
+
+.modal-feedback-show {
+  display: block;
 }
 
 .feedback-user-info {
@@ -2240,12 +2264,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 220px;
-}
-
-.feedback-text {
-  /*display: flex;
-  flex-direction: column;*/
-  display: inline-block;  
 }
 
 .feedback-label {
@@ -2321,7 +2339,6 @@ body {
   width: 943px;
   height: 449px;
   position: fixed;
-  display: none;
   top: 120px;
   left: 50%;
   margin-left: -471px;
@@ -2347,14 +2364,13 @@ body {
 
 .purchase-popup {
   position: fixed;
-  display: none;
   top: 200px;
   left: 50%;
   margin-left: -310px;
   width: 620px;
   background-color: var(--basic-white);
   border-top: 7px solid var(--basic-red);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--basic-block-shadow);
   padding-top: 73px;
 }
 
@@ -2434,3 +2450,21 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
+
+@keyframes bounce {
+ 0% { transform: translateY(-2000px); }
+ 70% { transform: translateY(30px); }
+ 90% { transform: translateY(-10px); }
+ 100% { transform: translateY(0); }
+ }
+
+@keyframes shake {
+ 0%, 100% { transform: translateX(0); }
+ 10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+ 20%, 40%, 60%, 80% { transform: translateX(10px); }
+ }
+
+.modal-error {
+ animation-name: shake;
+ animation-duration: 0.6s;
+ }

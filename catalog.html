@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -20,6 +21,7 @@
           </a>
           <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
             <input class="search-field" type="search" name="item-search" id="item-search" placeholder="Поиск:">
+            <label for="item-search" class="visually-hidden">Поиск по сайту</label>
             <button class="search-button" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                 <svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +104,9 @@
                 </div>
                 <div class="price-controls">
                   <input class="filter-price-set price-set-min" type="number" name="min-value" id="filter-min-value" value="0">
+                  <label for="filter-min-value" class="visually-hidden">Минимальная цена</label>
                   <input class="filter-price-set price-set-max" type="number" name="max-value" id="filter-max-value" value="30000">
+                  <label for="filter-max-value" class="visually-hidden">Максимальная цена</label>
                 </div>
               </div>
             </fieldset>
@@ -366,14 +370,14 @@
               Обратная связь: <span class="footer-feedback-email"><a class="footer-feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
             </p>
             <p class="footer-developer">
-              Разработано — <span class="footer-developer-website"><a class="footer-developer-link" href="http://htmlacademy.ru">htmlacademy.ru</a></span>
+              Разработано — <span class="footer-developer-website"><a class="footer-developer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></span>
             </p>
           </div>
         </div>
       </section>
     </footer>
 
-    <section class="purchase-popup">
+    <section class="modal purchase-popup">
       <p class="purchase-popup-message">Товар добавлен в корзину!</p>
       <div class="purchase-popup-buttons">
         <button type="button" class="button popup-ordering">Оформить заказ</button>
